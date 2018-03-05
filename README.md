@@ -37,3 +37,17 @@ Two browsers are allowed to be used for web interactions in the framework: _chro
 
 #### Search parameter
 Test could be run with any search parameter. To specify concrete parameter, set city name as a value for `city` key in [data.properties](https://github.com/0102qa/WeatherMavenProject/blob/master/src/main/java/resources/data.properties).
+
+### Covered cases:
+* Api-proxy return correct status code
+* Api-proxy return correct content Type
+* Api call take not longer than 5 sec.
+* Api-proxy return not empty response
+* UI search request match with search request in API
+* First search result date on UI match with current user date
+* Correct number of results displayed on the page
+* UI display correct information that API sent:
+  * city name
+  * date
+  * temperature
+  * details
